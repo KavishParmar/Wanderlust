@@ -81,7 +81,7 @@ app.use((req,res,next)=>{
 
 
 //  ##MONGOOSE  
-main().then(()=> console.log("Connected to DB")).catch((err)=> console.log(err));
+main().then(()=> console.log("Connected to DB")).catch((err)=> console.log("MONGOOSE ERROR:",err));
 async function main() {
     await mongoose.connect(dburl);
 }
